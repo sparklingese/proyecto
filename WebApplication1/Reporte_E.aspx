@@ -9,7 +9,7 @@
     <link href="Font-awesome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="sources/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet" />
-    <link href="sources/Estilos_css/Estilo_Registro.css" rel="stylesheet" />
+    <link href="sources/Estilos_css/Estilo_Reporte.css" rel="stylesheet" />
     <script src="SweetAlert/sweetalert2.js"></script>
     <script src="SweetAlert/sweetalert2.all.min.js"></script>
     <title>Enviar Reporte</title>

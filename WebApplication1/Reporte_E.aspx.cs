@@ -18,7 +18,7 @@ namespace WebApplication1
         {
             conec.Open();
             MySqlCommand cmd = conec.CreateCommand();
-            cmd.CommandText = "select * from reportes";
+            cmd.CommandText = "select * from reporte";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -48,7 +48,7 @@ namespace WebApplication1
                     int resultado = conexiones.agregar(pReporte);
                     conec.Open();
                     MySqlCommand cmd = conec.CreateCommand();
-                    cmd.CommandText = "select * from reportes";
+                    cmd.CommandText = "select * from reporte";
                     cmd.ExecuteNonQuery();
                     DataTable dt = new DataTable();
                     MySqlDataAdapter da = new MySqlDataAdapter(cmd);
