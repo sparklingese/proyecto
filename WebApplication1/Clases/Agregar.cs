@@ -8,20 +8,20 @@ namespace WebApplication1.Clases
 	public class Agregar
 	{
 			public int Id { get; set; }
-			public string Marca { get; set; }
-			public string Producto { get; set; }
-			public string Precio { get; set; }
-			public string Cantidad { get; set; }
+			public string maquina { get; set; }
+			public string descripcion { get; set; }
+			public string problema { get; set; }
+			public string escritor { get; set; }
 			public Agregar() { }
 
-			public Agregar(string pMarca, string pProducto, string pPrecio, string pCanidad, int PId)
+			public Agregar(string pMaquina, string pDescripcion, string pProblema, string pEscritor, int pId)
 
 			{
-				this.Id = PId;
-				this.Marca = pMarca;
-				this.Producto = pProducto;
-				this.Precio = pPrecio;
-				this.Cantidad = pCanidad;
+				this.Id = pId;
+				this.maquina = pMaquina;
+				this.descripcion = pDescripcion;
+				this.problema = pProblema;
+				this.escritor = pEscritor;
 			}
 	}
 

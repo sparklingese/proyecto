@@ -21,29 +21,43 @@ namespace WebApplication1
 
 		protected void btnIniciar_Click1(object sender, EventArgs e)
 		{
-			if (txtContra.Text != "" && txtUser.Text != "")//Validando espacio vacio
+			if (txtContra.Text != "" && txtUser.Text != "" && txtTipo.Text != "")
 			{
-				string contra, usuario;
+                string contra, usuario;
+                string cargo;
 				contra = EncryptString(txtContra.Text, initVector);
 				usuario = txtUser.Text;
-				datos1.valorGlobal = usuario; //llamamos la clase datos1
+                cargo = txtTipo.Text;
+				datos1.valorGlobal = usuario; 
 
 
 				MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1; database= proyecto; Uid=root; pwd=;");
-				var cmd = "SELECT Id_usuario from usuarios WHERE Nombre_Usuario='" + usuario + "' AND Password='" + contra + "';";
+				var cmd = "SELECT Id_usuario from usuarios WHERE Nombre_Usuario='" + usuario + "'AND Cargo='" + cargo + "'AND Password='" + contra + "';";
 				MySqlCommand comando = new MySqlCommand(cmd, conexion);
-				conexion.Open();
-				int retorno = Convert.ToInt32(comando.ExecuteScalar());
-				if (retorno != 0)
+                conexion.Open();
+
+                if (cargo == "Administrador")
+                {
+                    Session["usermane"] = txtUser;
+                    Response.Redirect("Administrador.aspx");
+                }
+
+                else if (cargo == "Empleado")
+                {
+                    Session["usermane"] = txtUser;
+                    Response.Redirect("Empleado.aspx");
+                }
+
+                else if (cargo == "Tecnico")
+                {
+                    Session["usermane"] = txtUser;
+                    Response.Redirect("Tecnico.aspx");
+                }
+
+                else
 				{
-					Session["usermane"] = txtUser;//Creamos una session 
-					Response.Redirect("Inicio.aspx");//Nos redirecciona a nuestro formulario
-				}
-				else
-				{
-					//Mensaje de alerta que se mostrará; como que fuese un MessageBox solo que con animacion javascript de SweetAlert
 					alerta.Text = "<script>Swal.fire('Error de Credenciales', 'Su usuario o contraseña no son correctos', 'error') </script>";
-					txtContra.Text = "";//Limpia los text box
+					txtContra.Text = "";
 					txtUser.Text = "";
 				}
 			}
@@ -53,9 +67,9 @@ namespace WebApplication1
 			}
 		}
 
-		private const string initVector = "pemgail9uzpgzl88";//llave del encriptado        
-		private const int keysize = 256;// Esta constante se usa para determinar el tamaño de clave del algoritmo de cifrado
-										//Encriptar
+		private const string initVector = "pemgail9uzpgzl88";        
+		private const int keysize = 256;
+
 		public static string EncryptString(string plainText, string passPhrase)
 		{
 			byte[] initVectorBytes = Encoding.UTF8.GetBytes(initVector);

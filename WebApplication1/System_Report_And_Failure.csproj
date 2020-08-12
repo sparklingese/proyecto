@@ -70,13 +70,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Inicio.aspx" />
+    <Content Include="Administrador.aspx" />
+    <Content Include="Empleado.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Imagenes\Bienvenido Nuevo Usuario %281%29.jpg" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="Reporte.aspx" />
+    <Content Include="Reporte_E.aspx" />
     <Content Include="sources\css\bootstrap-grid.css" />
     <Content Include="sources\css\bootstrap-grid.min.css" />
     <Content Include="sources\css\bootstrap-reboot.css" />
@@ -89,19 +94,35 @@
     <Content Include="sources\Estilos_css\Estilo_Registro.css" />
     <Content Include="sweetalert\sweetalert2.all.min.js" />
     <Content Include="sweetalert\sweetalert2.js" />
+    <Content Include="Tecnico.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Agregar.cs" />
     <Compile Include="Clases\conexiones.cs" />
     <Compile Include="Clases\datos.cs" />
     <Compile Include="Clases\datos1.cs" />
-    <Compile Include="Inicio.aspx.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
+    <Compile Include="Clases\Tipo_Usuario.cs" />
+    <Compile Include="Empleado.aspx.cs">
+      <DependentUpon>Empleado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Inicio.aspx.designer.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
+    <Compile Include="Empleado.aspx.designer.cs">
+      <DependentUpon>Empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -118,12 +139,26 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="sources\Master_P\Plantilla_Pag_Inicio.Master.cs">
-      <DependentUpon>Plantilla_Pag_Inicio.Master</DependentUpon>
+    <Compile Include="Reporte.aspx.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="sources\Master_P\Plantilla_Pag_Inicio.Master.designer.cs">
-      <DependentUpon>Plantilla_Pag_Inicio.Master</DependentUpon>
+    <Compile Include="Reporte.aspx.designer.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_E.aspx.cs">
+      <DependentUpon>Reporte_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte_E.aspx.designer.cs">
+      <DependentUpon>Reporte_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tecnico.aspx.cs">
+      <DependentUpon>Tecnico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tecnico.aspx.designer.cs">
+      <DependentUpon>Tecnico.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -138,7 +173,6 @@
     <Content Include="sources\css\bootstrap-reboot.min.css.map" />
     <Content Include="sources\css\bootstrap.css.map" />
     <Content Include="sources\css\bootstrap.min.css.map" />
-    <Content Include="sources\Master_P\Plantilla_Pag_Inicio.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
