@@ -39,8 +39,8 @@ namespace WebApplication1.Clases
         public static int agregar(Agregar pReporte)
         {
             int retorno = 0;
-            MySqlCommand comado = new MySqlCommand(string.Format("Insert into reportes (Id, Maquina, Descripcion, Problema, Escritor) values('{0}','{1}','{2}','{3}','{4}')", pReporte.Id, pReporte.maquina, pReporte.descripcion,
-           pReporte.problema, pReporte.escritor), datos.ObtenerConexion());
+            MySqlCommand comado = new MySqlCommand(string.Format("Insert into reportes (Id, Maquina, Descripcion, Problema, Escritor) values('{0}','{1}','{2}','{3}','{4}')", pReporte.Id, pReporte.Maquina, pReporte.Descripcion,
+           pReporte.Problema, pReporte.Escritor), datos.ObtenerConexion());
             retorno = comado.ExecuteNonQuery();
             return retorno;
         }

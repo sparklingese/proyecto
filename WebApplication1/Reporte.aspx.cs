@@ -16,13 +16,7 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conec.Open();
-            MySqlCommand cmd = conec.CreateCommand();
-            cmd.CommandText = "select * from reportes";
-            cmd.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            conec.Close();
+            
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
@@ -37,10 +31,10 @@ namespace WebApplication1
                 try
                 {
                     Agregar pReporte = new Agregar();
-                    pReporte.maquina = txtmaquina.Text.Trim();
-                    pReporte.descripcion = txtdescripcion.Text.Trim();
-                    pReporte.problema = txtproblema.Text.Trim();
-                    pReporte.escritor = txtescritor.Text.Trim();
+                    pReporte.Maquina = txtmaquina.Text.Trim();
+                    pReporte.Descripcion = txtdescripcion.Text.Trim();
+                    pReporte.Problema = txtproblema.Text.Trim();
+                    pReporte.Escritor = txtescritor.Text.Trim();
                     int resultado = conexiones.agregar(pReporte);
                     conec.Open();
                     MySqlCommand cmd = conec.CreateCommand();

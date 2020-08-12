@@ -41,10 +41,10 @@ namespace WebApplication1
                 {
 
                     Agregar pReporte = new Agregar();
-                    pReporte.maquina = txtmaquina.Text.Trim();
-                    pReporte.descripcion = txtdescripcion.Text.Trim();
-                    pReporte.problema = txtproblema.Text.Trim();
-                    pReporte.escritor = txtescritor.Text.Trim();
+                    pReporte.Maquina = txtmaquina.Text.Trim();
+                    pReporte.Descripcion = txtdescripcion.Text.Trim();
+                    pReporte.Problema = txtproblema.Text.Trim();
+                    pReporte.Escritor = txtescritor.Text.Trim();
                     int resultado = conexiones.agregar(pReporte);
                     conec.Open();
                     MySqlCommand cmd = conec.CreateCommand();

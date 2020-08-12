@@ -92,6 +92,7 @@
     <Content Include="sources\Estilos_css\Estilo_Login.css" />
     <Content Include="sources\Estilos_css\Estilo_Pag_Inicio.css" />
     <Content Include="sources\Estilos_css\Estilo_Registro.css" />
+    <Content Include="sources\Estilos_css\Estilo_Reporte.css" />
     <Content Include="sweetalert\sweetalert2.all.min.js" />
     <Content Include="sweetalert\sweetalert2.js" />
     <Content Include="Tecnico.aspx" />
