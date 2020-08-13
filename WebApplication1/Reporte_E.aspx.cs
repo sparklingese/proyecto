@@ -16,16 +16,7 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conec.Open();
-            MySqlCommand cmd = conec.CreateCommand();
-            cmd.CommandText = "select * from reporte";
-            cmd.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            da.Fill(dt);
-            gvdlista.DataSource = dt;
-            gvdlista.DataBind();
-            conec.Close();
+           
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
@@ -53,8 +44,6 @@ namespace WebApplication1
                     DataTable dt = new DataTable();
                     MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                     da.Fill(dt);
-                    gvdlista.DataSource = dt;
-                    gvdlista.DataBind();
                     conec.Close();
 
                     alerta.Text = "<script>Swal.fire('Su Reporte se Envio con exito.', '¡Gracias por preferirnos!', 'success'); </script>";

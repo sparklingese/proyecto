@@ -13,6 +13,15 @@ namespace WebApplication1 {
     public partial class Reporte_E {
         
         /// <summary>
+        /// Control form2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
+        
+        /// <summary>
         /// Control btnInicio.
         /// </summary>
         /// <remarks>
@@ -20,24 +29,6 @@ namespace WebApplication1 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnInicio;
-        
-        /// <summary>
-        /// Control txtproblema.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtproblema;
-        
-        /// <summary>
-        /// Control txtdescripcion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtdescripcion;
         
         /// <summary>
         /// Control txtmaquina.
@@ -49,6 +40,24 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.TextBox txtmaquina;
         
         /// <summary>
+        /// Control txtdescripcion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtdescripcion;
+        
+        /// <summary>
+        /// Control txtproblema.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtproblema;
+        
+        /// <summary>
         /// Control txtescritor.
         /// </summary>
         /// <remarks>
@@ -56,15 +65,6 @@ namespace WebApplication1 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtescritor;
-        
-        /// <summary>
-        /// Control gvdlista.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvdlista;
         
         /// <summary>
         /// Control alerta.

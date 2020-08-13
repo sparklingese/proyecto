@@ -15,7 +15,7 @@
     
     <title>Enviar Reporte</title>
 </head>
-<body>
+<body class="bg-info">
      <script type="text/javascript">
         function validar(e) { // 1
             tecla = (document.all) ? e.keyCode : e.which; // 2
@@ -58,7 +58,7 @@
     </script>
 
     <form id="form2" runat="server">
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
             <a class="navbar-brand" href="#">Techport</a>
 
@@ -75,7 +75,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3 myform-cont">
-                        <h2>Digitar Reporte</h2>
+                        <h2 class="bg-dark">Digitar Reporte</h2>
                         <div class="myform-top">
                         </div>
                         <div class="myform-bottom">
@@ -92,7 +92,7 @@
                             <div class="form-group">
                                 <asp:TextBox ID="txtescritor" runat="server" placeholder="Digite Usuario y Cargo..." type="text" class="form-control" minlength="1" MaxLength="50"></asp:TextBox>
                             </div>
-                            <asp:Button runat="server" Text="Enviar Reporte" CssClass="form-control btn btn-primary" OnClick="Unnamed1_Click"></asp:Button>
+                            <asp:Button runat="server" Text="Enviar Reporte" CssClass="form-control btn btn-dark" OnClick="Unnamed1_Click"></asp:Button>
                         </div>
                     </div>
                 </div>

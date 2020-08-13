@@ -25,14 +25,19 @@ namespace WebApplication1
             Response.Redirect("Home.aspx");
         }
 
-        protected void btnreporte_Click(object sender, EventArgs e)
+        protected void btnhistorial_Click(object sender, EventArgs e)
         {
             Response.Redirect("Administrador.aspx");
         }
 
-        protected void btnhistorial_Click(object sender, EventArgs e)
+        protected void btntareas_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Administrador.aspx");
+            Response.Redirect("Tareas.aspx");
+        }
+
+        protected void btnrepo_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("Tareas.aspx");
         }
     }
 }

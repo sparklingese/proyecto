@@ -14,7 +14,7 @@
     <script src="SweetAlert/sweetalert2.all.min.js"></script>
     <title>Enviar Reporte</title>
 </head>
-<body>
+<body class="bg-info">
     <script type="text/javascript">
         function validar(e) { // 1
             tecla = (document.all) ? e.keyCode : e.which; // 2
@@ -57,14 +57,12 @@
     </script>
 
 
-    <form runat="server">
-
-
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <form id="form2" runat="server">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
             <a class="navbar-brand" href="#">Techport</a>
 
-            <asp:Button ID="btnInicio" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btnInicio_Click" />
+            <asp:Button ID="btnInicio" BorderColor="White" ForeColor="white" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btnInicio_Click" />
 
         </nav>
         <div class="my-content">
@@ -77,55 +75,28 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3 myform-cont">
-                        <h2>Digite su Reporte</h2>
+                        <h2 class="bg-dark">Digitar Reporte</h2>
                         <div class="myform-top">
                         </div>
                         <div class="myform-bottom">
 
                             <div class="form-group">
-                                <asp:TextBox ID="txtproblema" runat="server" placeholder="Que tipo es su problema..." type="text" class="form-control" onpaste="return false"
-                                    onkeypress="return validar(event)" minlength="1" MaxLength="12"></asp:TextBox>
+                                <asp:TextBox ID="txtmaquina" runat="server" placeholder="Numero de Maquina..." type="text" class="form-control" onpaste="return false" onkeypress="return NumCheck(event, this)"></asp:TextBox>
                             </div>
                             <div class="form-group">
-                                <asp:TextBox ID="txtdescripcion" runat="server" placeholder="Descripcion..." type="text" class="form-control" onpaste="return false"
-                                    onkeypress="return validar(event)" minlength="1" MaxLength="300"></asp:TextBox>
+                                <asp:TextBox ID="txtdescripcion" runat="server" placeholder="Descripcion del Problema..." type="text" class="form-control" onpaste="return false" onkeypress="return validar(event)" minlength="1" MaxLength="300"></asp:TextBox>
                             </div>
                             <div class="form-group">
-                                <asp:TextBox ID="txtmaquina" runat="server" placeholder="No Maquina..." type="text" class="form-control" onpaste="return false"
-                                    onkeypress="return NumCheck(event, this)" />
+                                <asp:TextBox ID="txtproblema" runat="server" placeholder="Tipo de Problema..." type="text" class="form-control" onpaste="return false" onkeypress="return validar(event)" minlength="1" MaxLength="25"></asp:TextBox>
                             </div>
                             <div class="form-group">
-                                <asp:TextBox ID="txtescritor" runat="server" placeholder="Usuario y Cargo..." type="text" class="form-control" minlength="1" MaxLength="25" />
+                                <asp:TextBox ID="txtescritor" runat="server" placeholder="Digite Usuario y Cargo..." type="text" class="form-control" minlength="1" MaxLength="50"></asp:TextBox>
                             </div>
-                            <asp:Button runat="server" Text="Enviar" CssClass="form-control btn btn-primary" OnClick="Unnamed1_Click"></asp:Button>
-
-
+                            <asp:Button runat="server" Text="Enviar Reporte" CssClass="form-control btn btn-dark" OnClick="Unnamed1_Click"></asp:Button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <asp:GridView ID="gvdlista" runat="server" AutoGenerateColumns="False" Width="1004px" Height="270px" CellPadding="4" ForeColor="#333333" GridLines="None">
-                <AlternatingRowStyle BackColor="White" />
-                <Columns>
-                    <asp:BoundField DataField="ID" HeaderText="ID" />
-                    <asp:BoundField DataField="Problema" HeaderText="Problema" />
-                    <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" />
-                    <asp:BoundField DataField="Maquina" HeaderText="No Maquina" />
-                    <asp:BoundField DataField="Escritor" HeaderText="Usuario/Cargo" />
-                </Columns>
-                <EditRowStyle BackColor="#2461BF" />
-                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-                <RowStyle BackColor="#EFF3FB" />
-                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-                <SortedAscendingCellStyle BackColor="#F5F7FB" />
-                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
-                <SortedDescendingCellStyle BackColor="#E9EBEF" />
-                <SortedDescendingHeaderStyle BackColor="#4870BE" />
-            </asp:GridView>
         </div>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
         <script src="js/bootstrap.min.js"></script>

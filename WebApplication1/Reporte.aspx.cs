@@ -21,7 +21,7 @@ namespace WebApplication1
 
         protected void btnInicio_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Empleado.aspx");
+            Response.Redirect("Administrador.aspx");
         }
 
         protected void Unnamed1_Click(object sender, EventArgs e)

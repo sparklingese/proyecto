@@ -9,6 +9,7 @@ using System.Text;
 using System.IO;
 using MySql.Data.MySqlClient;
 using WebApplication1.Clases;
+using System.Globalization;
 
 namespace WebApplication1
 {
@@ -31,7 +32,7 @@ namespace WebApplication1
 				datos1.valorGlobal = usuario; 
 
 
-				MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1; database= proyecto; Uid=root; pwd=;");
+				MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1; database=proyecto; Uid=root; pwd=;");
 				var cmd = "SELECT Id_usuario from usuarios WHERE Nombre_Usuario='" + usuario + "'AND Cargo='" + cargo + "'AND Password='" + contra + "';";
 				MySqlCommand comando = new MySqlCommand(cmd, conexion);
                 conexion.Open();
@@ -56,14 +57,14 @@ namespace WebApplication1
 
                 else
 				{
-					alerta.Text = "<script>Swal.fire('Error de Credenciales', 'Su usuario o contraseña no son correctos', 'error') </script>";
+					alerta.Text = "<script>Swal.fire('Credential Error', 'Your username or password is not correct', 'error') </script>";
 					txtContra.Text = "";
 					txtUser.Text = "";
 				}
 			}
 			else
 			{
-				alerta.Text = "<script>Swal.fire('ADVERTENCIA', 'No deje espacios en blanco', 'error') </script>";
+				alerta.Text = "<script>Swal.fire('WARNING', 'Do not leave blank spaces', 'error') </script>";
 			}
 		}
 
@@ -93,6 +94,33 @@ namespace WebApplication1
 		{
 			Response.Redirect("Register.aspx");
 		}
-	}
+
+        protected void btnIdioma_Click(object sender, EventArgs e)
+        {
+
+            string lang = string.Empty;
+            HttpCookie cookie = Request.Cookies["CurrentLanguage"];
+
+            if (cookie != null && cookie.Value != null)
+            {
+                lang = cookie.Value;
+                CultureInfo Cul = CultureInfo.CreateSpecificCulture(lang);
+                System.Threading.Thread.CurrentThread.CurrentUICulture = Cul;
+                System.Threading.Thread.CurrentThread.CurrentCulture = Cul;
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(lang)) lang = "en-Us";
+                CultureInfo Cul = CultureInfo.CreateSpecificCulture(lang);
+
+                System.Threading.Thread.CurrentThread.CurrentUICulture = Cul;
+                System.Threading.Thread.CurrentThread.CurrentCulture = Cul;
+                HttpCookie cookie_new = new HttpCookie("CurrentLanguage");
+                cookie_new.Value = lang;
+                Response.SetCookie(cookie_new);
+            }
+            base.InitializeCulture();
+        }
+    }
 
 }

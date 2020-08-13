@@ -74,12 +74,16 @@
     <Content Include="Empleado.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Imagenes\Bienvenido Nuevo Usuario %281%29.jpg" />
+    <Content Include="Imagenes\Diseño sin título.jpg" />
+    <Content Include="IniciarSesion.aspx" />
+    <Content Include="Inicio.aspx" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="Registrarse.aspx" />
     <Content Include="Reporte.aspx" />
     <Content Include="Reporte_E.aspx" />
     <Content Include="sources\css\bootstrap-grid.css" />
@@ -95,6 +99,7 @@
     <Content Include="sources\Estilos_css\Estilo_Reporte.css" />
     <Content Include="sweetalert\sweetalert2.all.min.js" />
     <Content Include="sweetalert\sweetalert2.js" />
+    <Content Include="Tareas.aspx" />
     <Content Include="Tecnico.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -107,6 +112,9 @@
       <DependentUpon>Administrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Clases\Agregar.cs" />
+    <Compile Include="Clases\ClaseBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Clases\conexiones.cs" />
     <Compile Include="Clases\datos.cs" />
     <Compile Include="Clases\datos1.cs" />
@@ -125,6 +133,20 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="IniciarSesion.aspx.cs">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.aspx.designer.cs">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -140,6 +162,13 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Registrarse.aspx.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrarse.aspx.designer.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Reporte.aspx.cs">
       <DependentUpon>Reporte.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -153,6 +182,13 @@
     </Compile>
     <Compile Include="Reporte_E.aspx.designer.cs">
       <DependentUpon>Reporte_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tareas.aspx.cs">
+      <DependentUpon>Tareas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tareas.aspx.designer.cs">
+      <DependentUpon>Tareas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tecnico.aspx.cs">
       <DependentUpon>Tecnico.aspx</DependentUpon>
@@ -174,6 +210,7 @@
     <Content Include="sources\css\bootstrap-reboot.min.css.map" />
     <Content Include="sources\css\bootstrap.css.map" />
     <Content Include="sources\css\bootstrap.min.css.map" />
+    <None Include="Properties\PublishProfiles\SystemReportAndFailure20200813112139 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -181,6 +218,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
