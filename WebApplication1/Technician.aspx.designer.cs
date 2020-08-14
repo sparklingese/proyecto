@@ -10,7 +10,7 @@
 namespace WebApplication1 {
     
     
-    public partial class Administrador {
+    public partial class Technician {
         
         /// <summary>
         /// Control btninicio.
@@ -22,13 +22,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Button btninicio;
         
         /// <summary>
-        /// Control btnreporte.
+        /// Control btntareas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnreporte;
+        protected global::System.Web.UI.WebControls.Button btntareas;
         
         /// <summary>
         /// Control btnhistorial.
@@ -38,15 +38,6 @@ namespace WebApplication1 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnhistorial;
-        
-        /// <summary>
-        /// Control btnusuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnusuario;
         
         /// <summary>
         /// Control btncerrar.

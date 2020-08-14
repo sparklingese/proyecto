@@ -40,19 +40,19 @@ namespace WebApplication1
                 if (cargo == "Administrador")
                 {
                     Session["usermane"] = txtUser;
-                    Response.Redirect("Administrador.aspx");
+                    Response.Redirect("Manager.aspx");
                 }
 
                 else if (cargo == "Empleado")
                 {
                     Session["usermane"] = txtUser;
-                    Response.Redirect("Empleado.aspx");
+                    Response.Redirect("Employee.aspx");
                 }
 
                 else if (cargo == "Tecnico")
                 {
                     Session["usermane"] = txtUser;
-                    Response.Redirect("Tecnico.aspx");
+                    Response.Redirect("Technician.aspx");
                 }
 
                 else

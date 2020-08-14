@@ -21,6 +21,7 @@
                 <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btninicio_Click" />
                 <asp:Button ID="btnreporte" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Enviar Reporte" OnClick="btnreporte_Click" />
                 <asp:Button ID="btnhistorial" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Historial" OnClick="btnhistorial_Click" />
+                 <asp:Button ID="btnusuario" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Usuarios" OnClick="btnusuario_Click" />
                 <asp:Button ID="btncerrar" BorderColor="White" ForeColor="White" class="btn btn-outline-warning my-2 my-sm-0" type="submit" runat="server" Text="Cerrar sesion" OnClick="btncerrar_Click" />
 
 

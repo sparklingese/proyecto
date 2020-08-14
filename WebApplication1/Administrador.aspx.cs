@@ -21,7 +21,7 @@ namespace WebApplication1
         protected void btncerrar_Click(object sender, EventArgs e)
         {
             Session.Remove("username");
-            Response.Redirect("Home.aspx");
+            Response.Redirect("Inicio.aspx");
         }
 
         protected void btnreporte_Click(object sender, EventArgs e)
@@ -37,6 +37,11 @@ namespace WebApplication1
         protected void btnrepo_Click1(object sender, EventArgs e)
         {
             Response.Redirect("Reporte.aspx");
+        }
+
+        protected void btnusuario_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Usuarios.aspx");
         }
     }
 }

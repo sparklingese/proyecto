@@ -7,22 +7,21 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
-    public partial class Tecnico : System.Web.UI.Page
+    public partial class Technician : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
         protected void btninicio_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Tecnico.aspx");
+            Response.Redirect("Technician.aspx");
         }
 
         protected void btncerrar_Click(object sender, EventArgs e)
         {
             Session.Remove("username");
-            Response.Redirect("Inicio.aspx");
+            Response.Redirect("Home.aspx");
         }
 
         protected void btnhistorial_Click(object sender, EventArgs e)

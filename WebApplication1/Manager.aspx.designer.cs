@@ -10,7 +10,7 @@
 namespace WebApplication1 {
     
     
-    public partial class Administrador {
+    public partial class Manager {
         
         /// <summary>
         /// Control btninicio.

@@ -7,22 +7,26 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
-    public partial class Tecnico : System.Web.UI.Page
+    public partial class Manager : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
         protected void btninicio_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Tecnico.aspx");
+            Response.Redirect("Manager.aspx");
         }
 
         protected void btncerrar_Click(object sender, EventArgs e)
         {
             Session.Remove("username");
-            Response.Redirect("Inicio.aspx");
+            Response.Redirect("Home.aspx");
+        }
+
+        protected void btnreporte_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Report.aspx");
         }
 
         protected void btnhistorial_Click(object sender, EventArgs e)
@@ -30,14 +34,14 @@ namespace WebApplication1
             Response.Redirect("Administrador.aspx");
         }
 
-        protected void btntareas_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Tareas.aspx");
-        }
-
         protected void btnrepo_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("Tareas.aspx");
+            Response.Redirect("Report.aspx");
+        }
+
+        protected void btnusuario_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Users.aspx");
         }
     }
 }

@@ -10,7 +10,7 @@
 namespace WebApplication1 {
     
     
-    public partial class Administrador {
+    public partial class Users {
         
         /// <summary>
         /// Control btninicio.
@@ -22,48 +22,21 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Button btninicio;
         
         /// <summary>
-        /// Control btnreporte.
+        /// Control btncrear.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnreporte;
+        protected global::System.Web.UI.WebControls.Button btncrear;
         
         /// <summary>
-        /// Control btnhistorial.
+        /// Control btnmodificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnhistorial;
-        
-        /// <summary>
-        /// Control btnusuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnusuario;
-        
-        /// <summary>
-        /// Control btncerrar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btncerrar;
-        
-        /// <summary>
-        /// Control btnrepo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnrepo;
+        protected global::System.Web.UI.WebControls.Button btnmodificar;
     }
 }
