@@ -47,6 +47,7 @@
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\Downloads\Conector - Códigos - BD-20200604\Esto va en referencia\MySql.Data.DLL</HintPath>
     </Reference>
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -106,6 +107,7 @@
     <Content Include="sweetalert\sweetalert2.all.min.js" />
     <Content Include="sweetalert\sweetalert2.js" />
     <Content Include="Tareas.aspx" />
+    <Content Include="Tasks.aspx" />
     <Content Include="Technician.aspx" />
     <Content Include="Tecnico.aspx" />
     <Content Include="Users.aspx" />
@@ -240,6 +242,13 @@
     </Compile>
     <Compile Include="Tareas.aspx.designer.cs">
       <DependentUpon>Tareas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks.aspx.cs">
+      <DependentUpon>Tasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks.aspx.designer.cs">
+      <DependentUpon>Tasks.aspx</DependentUpon>
     </Compile>
     <Compile Include="Technician.aspx.cs">
       <DependentUpon>Technician.aspx</DependentUpon>

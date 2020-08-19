@@ -23,10 +23,5 @@ namespace WebApplication1
         {
             Response.Redirect("Crear.aspx");
         }
-
-        protected void btnmodificar_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

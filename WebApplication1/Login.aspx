@@ -11,11 +11,11 @@
 	<script src="sweetalert/sweetalert2.all.min.js"></script>
 	<script src="sweetalert/sweetalert2.js"></script>
 </head>
-<body>
+<body class="bg-info">
 	<div class="container well contenedor">
 		<div class="row">
 			<div class="col-xs-12">
-				<h2>Sign In</h2>
+				<h2 class="bg-dark text-white">Sign In</h2>
 			</div>
 		</div>
 		<form id="form1" runat="server" class="form-horizontal">
@@ -41,7 +41,7 @@
 			</div>
 
 			<div class="form-group">
-				<asp:Button ID="btnIniciar" runat="server" Text="Sign In" CssClass="form-control btn btn alert-dark" OnClick="btnIniciar_Click1" />
+				<asp:Button ID="btnIniciar" runat="server" Text="Sign In" CssClass="form-control btn btn-dark text-white" OnClick="btnIniciar_Click1" />
 				<asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
 				<br />
 			</div>

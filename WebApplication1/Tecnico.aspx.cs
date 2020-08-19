@@ -25,11 +25,6 @@ namespace WebApplication1
             Response.Redirect("Inicio.aspx");
         }
 
-        protected void btnhistorial_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Administrador.aspx");
-        }
-
         protected void btntareas_Click(object sender, EventArgs e)
         {
             Response.Redirect("Tareas.aspx");

@@ -12,11 +12,11 @@
 
     <title>Iniciar Sesión</title>
 </head>
-<body>
+<body class="bg-info">
     <div class="container well contenedor">
 		<div class="row">
 			<div class="col-xs-12">
-				<h2>Iniciar Sesión</h2>
+				<h2 class="bg-dark text-white">Iniciar Sesión</h2>
 			</div>
 		</div>
 		<form id="form1" runat="server" class="form-horizontal">
@@ -42,7 +42,7 @@
 			</div>
 
 			<div class="form-group">
-				<asp:Button ID="btnIniciar" runat="server" Text="Iniciar Sesión" CssClass="form-control btn btn alert-dark" OnClick="btnIniciar_Click1" />
+				<asp:Button ID="btnIniciar" runat="server" Text="Iniciar Sesión" CssClass="form-control btn btn-dark text-white" OnClick="btnIniciar_Click1" />
 				<asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
 				<br />
 			</div>

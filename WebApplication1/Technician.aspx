@@ -19,7 +19,6 @@
                 <a class="navbar-brand" href="#">Techport</a>
                 <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Home" OnClick="btninicio_Click" />
                 <asp:Button ID="btntareas" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Task" OnClick="btntareas_Click" />
-                <asp:Button ID="btnhistorial" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="History" OnClick="btnhistorial_Click" />
                 <asp:Button ID="btncerrar" BorderColor="White" ForeColor="White" class="btn btn-outline-warning my-2 my-sm-0" type="submit" runat="server" Text="Log Out" OnClick="btncerrar_Click" />
             </nav>
         </header>

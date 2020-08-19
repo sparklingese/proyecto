@@ -19,7 +19,7 @@ namespace WebApplication1
         }
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text.Trim() != "" && txtContra.Text.Trim() != "" && txtConfirm.Text.Trim() != "" && txtName.Text.Trim() != "" && txtGenero.Text.Trim() != "" && txtCargo.Text.Trim() != "")
+            if (txtUser.Text.Trim() != "" && txtContra.Text.Trim() != "" && txtConfirm.Text.Trim() != "" && txtName.Text.Trim() != "" && txtgenero.Text.Trim() != "" && txtCargo.Text.Trim() != "")
             {
                 if (txtContra.Text == txtConfirm.Text)
                 {
@@ -31,7 +31,7 @@ namespace WebApplication1
                     nombre = txtName.Text;
                     usuario = txtUser.Text;
                     encriptada = EncryptString(txtContra.Text, initVector);
-                    genero = txtGenero.Text;
+                    genero = txtgenero.Text;
                     cargo = txtCargo.Text;
                     if (conexiones.UsuariosRepetidos(usuario, encriptada, nombre, genero, cargo) == 0)
                     {
@@ -40,7 +40,7 @@ namespace WebApplication1
                         txtUser.Text = "";
                         txtContra.Text = "";
                         txtConfirm.Text = "";
-                        txtGenero.Text = "";
+                        txtgenero.Text = "";
                         txtCargo.Text = "";
                     }
                     else
@@ -85,5 +85,6 @@ namespace WebApplication1
         {
             Response.Redirect("IniciarSesion.aspx");
         }
+
     }
 }

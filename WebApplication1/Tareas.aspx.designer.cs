@@ -22,49 +22,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Button btnInicio;
         
         /// <summary>
-        /// Control txtmarca.
+        /// Control gdvrepo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtmarca;
+        protected global::System.Web.UI.WebControls.GridView gdvrepo;
         
         /// <summary>
-        /// Control txtproducto.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtproducto;
-        
-        /// <summary>
-        /// Control txtprecio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtprecio;
-        
-        /// <summary>
-        /// Control txtcantidad.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcantidad;
-        
-        /// <summary>
-        /// Control gvdlista.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvdlista;
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
         /// Control alerta.

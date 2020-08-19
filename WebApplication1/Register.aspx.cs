@@ -36,7 +36,7 @@ namespace WebApplication1
 					cargo = txtCargo.Text;
 					if (conexiones.UsuariosRepetidos(usuario, encriptada, nombre, genero, cargo) == 0)
 					{
-						alerta.Text = "<script>Swal.fire('Registrado con éxito', '¡Se ha registrado satisfacoriamente!', 'success'); </script>";
+						alerta.Text = "<script>Swal.fire('Successfully registered', 'You've registered satisfactorily!', 'success'); </script>";
 						txtName.Text = "";
 						txtUser.Text = "";
 						txtContra.Text = "";
@@ -46,17 +46,17 @@ namespace WebApplication1
 					}
 					else
 					{
-						alerta.Text = "<script>Swal.fire('Este usuario ya existe', 'Elije nuevo nombre de usuario', 'error'); </script>";
+						alerta.Text = "<script>Swal.fire('This user already exists', 'Choose new user name', 'error'); </script>";
 					}
 				}
 				else
 				{
-					alerta.Text = "<script>Swal.fire('Contraseña incorrecta', 'Repita su contraseña.', 'error');</script>";
+					alerta.Text = "<script>Swal.fire('Wrong password', 'Repeat your password.', 'error');</script>";
 				}
 			}
 			else
 			{
-				alerta.Text = "<script>Swal.fire('ADVERTENCIA', 'No deje espacios en blanco', 'error') </script>";
+				alerta.Text = "<script>Swal.fire('WARNING', 'Do not leave blank', 'error') </script>";
 			}
 		}
 		private const string initVector = "pemgail9uzpgzl88";

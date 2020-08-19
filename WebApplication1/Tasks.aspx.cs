@@ -10,21 +10,19 @@ using MySql.Data.MySqlClient;
 
 namespace WebApplication1
 {
-    public partial class Tareas : System.Web.UI.Page
+    public partial class Tasks : System.Web.UI.Page
     {
         MySqlConnection conec = new MySqlConnection("server=127.0.0.1; database=proyecto; Uid=root; pwd=;");
-
         protected void Page_Load(object sender, EventArgs e)
         {
-          
-        }
 
+        }
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
             try
             {
-                
-               
+
+
                 conec.Open();
                 MySqlCommand cmd = conec.CreateCommand();
                 cmd.CommandText = "select * from reporte";
@@ -36,18 +34,17 @@ namespace WebApplication1
                 gdvrepo.DataBind();
                 conec.Close();
 
-                alerta.Text = "<script>Swal.fire('Los datos se han cargado con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
+                alerta.Text = "<script>Swal.fire('The data has been loaded successfully.', 'Thank you for preferring us!', 'success'); </script>";
 
             }
             catch
             {
-                alerta.Text = "<script>Swal.fire('Algo salio mal', 'Intentalo otra vez', 'error') </script>";
+                alerta.Text = "<script>Swal.fire('Something went wrong', 'Try again', 'error') </script>";
             }
         }
         protected void btnInicio_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Tecnico.aspx");
+            Response.Redirect("Technician.aspx");
         }
     }
 }
-

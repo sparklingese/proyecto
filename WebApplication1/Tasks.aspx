@@ -1,11 +1,11 @@
-﻿ <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Tareas.aspx.cs" Inherits="WebApplication1.Tareas" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Tasks.aspx.cs" Inherits="WebApplication1.Tasks" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="sources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="sources/css/bootstrap.min.css" rel="stylesheet" />
     <link href="Font-awesome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="sources/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet" />
@@ -13,7 +13,7 @@
     <script src="SweetAlert/sweetalert2.js"></script>
     <script src="SweetAlert/sweetalert2.all.min.js"></script>
 
-    <title>Tareas</title>
+    <title>Tasks</title>
 </head>
 <body class="bg-info">
     
@@ -24,7 +24,7 @@
 
             <a class="navbar-brand" href="#">Techport</a>
 
-            <asp:Button ID="btnInicio" BorderColor="White" ForeColor="White" class="btn btn-dark btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btnInicio_Click" />
+            <asp:Button ID="btnInicio" BorderColor="White" ForeColor="White" class="btn btn-dark btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Home" OnClick="btnInicio_Click" />
 
         </nav>
        
@@ -44,7 +44,7 @@
             </asp:GridView>
         </div>
          <div>
-            <asp:Button ID="Button1" runat="server" CssClass="btn btn-dark" Text="Ver reportes" OnClick="Unnamed1_Click" />
+            <asp:Button ID="Button1" runat="server" CssClass="btn btn-dark" Text="See tasks" OnClick="Unnamed1_Click" />
         </div>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
         <script src="js/bootstrap.min.js"></script>

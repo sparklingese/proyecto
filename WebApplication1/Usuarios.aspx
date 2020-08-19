@@ -19,7 +19,7 @@
                 <a class="navbar-brand" href="#">Techport</a>
                 <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btninicio_Click" />
                 <asp:Button ID="btncrear" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Crear Usuario" OnClick="btncrear_Click" />
-                <asp:Button ID="btnmodificar" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Modificar Usuario" OnClick="btnmodificar_Click" />
+                
                 
 
             </nav>
