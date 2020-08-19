@@ -76,6 +76,9 @@
     <Content Include="Create.aspx" />
     <Content Include="Empleado.aspx" />
     <Content Include="Employee.aspx" />
+    <Content Include="Historial.aspx" />
+    <Content Include="Historial_E.aspx" />
+    <Content Include="History.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Imagenes\Bienvenido Nuevo Usuario %281%29.jpg" />
     <Content Include="Imagenes\Diseño sin título.jpg" />
@@ -157,6 +160,27 @@
     </Compile>
     <Compile Include="Employee.aspx.designer.cs">
       <DependentUpon>Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Historial.aspx.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Historial.aspx.designer.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Historial_E.aspx.cs">
+      <DependentUpon>Historial_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Historial_E.aspx.designer.cs">
+      <DependentUpon>Historial_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

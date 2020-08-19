@@ -31,7 +31,7 @@ namespace WebApplication1
 
         protected void btnhistorial_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Empleado.aspx");
+            Response.Redirect("Historial_E.aspx");
         }
 
         protected void btnrepo_Click1(object sender, EventArgs e)

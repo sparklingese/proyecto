@@ -10,42 +10,42 @@
 namespace WebApplication1 {
     
     
-    public partial class Employee {
+    public partial class Historial {
         
         /// <summary>
-        /// Control btninicio.
+        /// Control btnInicio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btninicio;
+        protected global::System.Web.UI.WebControls.Button btnInicio;
         
         /// <summary>
-        /// Control btnreporte.
+        /// Control gdvrepo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnreporte;
+        protected global::System.Web.UI.WebControls.GridView gdvrepo;
         
         /// <summary>
-        /// Control btncerrar.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btncerrar;
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// Control btnrepo.
+        /// Control alerta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnrepo;
+        protected global::System.Web.UI.WebControls.Literal alerta;
     }
 }

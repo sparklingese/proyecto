@@ -18,14 +18,13 @@
                 <a class="navbar-brand" href="#">Techport</a>
                 <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-1 my-sm-0" type="submit" runat="server" Text="Home" OnClick="btninicio_Click" />
                 <asp:Button ID="btnreporte" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-1 my-sm-0" type="submit" runat="server" Text="Submit Report" OnClick="btnreporte_Click" />
-                <asp:Button ID="btnhistorial" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-1 my-sm-0" type="submit" runat="server" Text="History" OnClick="btnhistorial_Click" />
                 <asp:Button ID="btncerrar" BorderColor="White" ForeColor="White" class="btn btn-outline-warning my-1 my-sm-0" type="submit" runat="server" Text="Log Out" OnClick="btncerrar_Click" />
             </nav>
         </header>
         <div class="jumbotron bg-info rounded-circle">
             <div class="container well contenedor bg-info text-white">
                 <h1 class="bg-dark">Welcome Back!</h1>
-                <p>He'll wonder what benefits you have? The benefits that you have are that you can send reports when a problem is happening in your machine, and you can also see your history and that of others in your office</p>
+                <p>He&#39;ll wonder what benefits you have? The benefits that you have are that you can send reports when a problem is happening in your machine.</p>
                 <p>
                     <asp:Button ID="btnrepo" runat="server" Text="Send your Report Now!" CssClass="form-control btn btn-dark" OnClick="btnrepo_Click1" /></p>
             </div>
