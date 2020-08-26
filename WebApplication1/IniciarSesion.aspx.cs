@@ -9,7 +9,7 @@ using System.Text;
 using System.IO;
 using MySql.Data.MySqlClient;
 using WebApplication1.Clases;
-using System.Globalization;
+
 
 namespace WebApplication1
 {
@@ -87,11 +87,6 @@ namespace WebApplication1
             memoryStream.Close();
             cryptoStream.Close();
             return Convert.ToBase64String(cipherTextBytes);
-        }
-
-        protected void btnRegistro_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Registrarse.aspx");
         }
     }
 }

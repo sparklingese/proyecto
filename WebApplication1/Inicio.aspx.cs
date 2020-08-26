@@ -23,14 +23,10 @@ namespace WebApplication1
             Response.Redirect("IniciarSesion.aspx");
         }
 
-        protected void btnRegistro_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Registrarse.aspx");
-        }
 
         protected void btnregi_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("Registrarse.aspx");
+            Response.Redirect("IniciarSesion.aspx");
         }
 
         protected void btnIdioma_Click(object sender, EventArgs e)

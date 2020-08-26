@@ -34,7 +34,7 @@
 			</div>
 
             <div class="form-group">
-				<asp:Label ID="lblTipo" runat="server" meta:resourcekey="lblTipo" Text="Confirme su Cargo" CssClass="custom-control-label col-sm2"></asp:Label>
+				<asp:Label ID="lblTipo" runat="server" meta:resourcekey="lblTipo" Text="Confirm your user level" CssClass="custom-control-label col-sm2"></asp:Label>
 				<div class="col-sm10">
 					<asp:TextBox ID="txtTipo" runat="server" CssClass="form-control"></asp:TextBox>
 				</div>
@@ -45,9 +45,7 @@
 				<asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
 				<br />
 			</div>
-			<div class="form-group">
-				<asp:Button ID="btnRegistro" runat="server" Text="Sign Up" CssClass="form-control btn btn-primary " OnClick="btnRegistro_Click" />
-			</div>
+		
           
 		</form>
 

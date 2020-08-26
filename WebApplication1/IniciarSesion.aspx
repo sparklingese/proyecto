@@ -46,9 +46,7 @@
 				<asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
 				<br />
 			</div>
-			<div class="form-group">
-				<asp:Button ID="btnRegistro" runat="server" Text="Registrarse" CssClass="form-control btn btn-primary " OnClick="btnRegistro_Click" />
-			</div>
+			
           
 		</form>
 

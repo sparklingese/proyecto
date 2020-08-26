@@ -9,7 +9,7 @@ using System.Text;
 using System.IO;
 using MySql.Data.MySqlClient;
 using WebApplication1.Clases;
-using System.Globalization;
+
 
 namespace WebApplication1
 {
@@ -89,38 +89,6 @@ namespace WebApplication1
 			cryptoStream.Close();
 			return Convert.ToBase64String(cipherTextBytes);
 		}
-
-		protected void btnRegistro_Click(object sender, EventArgs e)
-		{
-			Response.Redirect("Register.aspx");
-		}
-
-        protected void btnIdioma_Click(object sender, EventArgs e)
-        {
-
-            string lang = string.Empty;
-            HttpCookie cookie = Request.Cookies["CurrentLanguage"];
-
-            if (cookie != null && cookie.Value != null)
-            {
-                lang = cookie.Value;
-                CultureInfo Cul = CultureInfo.CreateSpecificCulture(lang);
-                System.Threading.Thread.CurrentThread.CurrentUICulture = Cul;
-                System.Threading.Thread.CurrentThread.CurrentCulture = Cul;
-            }
-            else
-            {
-                if (string.IsNullOrEmpty(lang)) lang = "en-Us";
-                CultureInfo Cul = CultureInfo.CreateSpecificCulture(lang);
-
-                System.Threading.Thread.CurrentThread.CurrentUICulture = Cul;
-                System.Threading.Thread.CurrentThread.CurrentCulture = Cul;
-                HttpCookie cookie_new = new HttpCookie("CurrentLanguage");
-                cookie_new.Value = lang;
-                Response.SetCookie(cookie_new);
-            }
-            base.InitializeCulture();
-        }
     }
 
 }

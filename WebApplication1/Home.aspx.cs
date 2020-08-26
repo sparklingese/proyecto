@@ -24,14 +24,9 @@ namespace WebApplication1
             Response.Redirect("Login.aspx");
         }
 
-        protected void btnRegistro_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Register.aspx");
-        }
-
         protected void btnregi_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("Register.aspx");
+            Response.Redirect("Login.aspx");
         }
 
         protected void btnIdioma_Click(object sender, EventArgs e)
