@@ -76,6 +76,7 @@
     <Content Include="Create.aspx" />
     <Content Include="Empleado.aspx" />
     <Content Include="Employee.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Historial.aspx" />
     <Content Include="History.aspx" />
     <Content Include="Home.aspx" />
@@ -130,6 +131,10 @@
     <Compile Include="Clases\datos.cs" />
     <Compile Include="Clases\datos1.cs" />
     <Compile Include="Clases\Tipo_Usuario.cs" />
+    <Compile Include="Clases_Ingles\Add.cs" />
+    <Compile Include="Clases_Ingles\Conection.cs" />
+    <Compile Include="Clases_Ingles\Data.cs" />
+    <Compile Include="Clases_Ingles\Data1.cs" />
     <Compile Include="Crear.aspx.cs">
       <DependentUpon>Crear.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -157,6 +162,9 @@
     </Compile>
     <Compile Include="Employee.aspx.designer.cs">
       <DependentUpon>Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Historial.aspx.cs">
       <DependentUpon>Historial.aspx</DependentUpon>

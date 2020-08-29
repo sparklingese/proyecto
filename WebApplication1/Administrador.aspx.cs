@@ -11,7 +11,10 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Usuario"] != null)
+            {
+                Response.Redirect("IniciarSesion.aspx");
+            }
         }
         protected void btninicio_Click(object sender, EventArgs e)
         {

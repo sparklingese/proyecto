@@ -25,7 +25,7 @@ namespace WebApplication1
 
                 conec.Open();
                 MySqlCommand cmd = conec.CreateCommand();
-                cmd.CommandText = "select * from reporte";
+                cmd.CommandText = "select * from report";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);

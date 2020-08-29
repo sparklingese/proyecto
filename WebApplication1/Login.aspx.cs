@@ -9,7 +9,7 @@ using System.Text;
 using System.IO;
 using MySql.Data.MySqlClient;
 using WebApplication1.Clases;
-
+using WebApplication1.Clases_Ingles;
 
 namespace WebApplication1
 {
@@ -24,32 +24,32 @@ namespace WebApplication1
 		{
 			if (txtContra.Text != "" && txtUser.Text != "" && txtTipo.Text != "")
 			{
-                string contra, usuario;
-                string cargo;
-				contra = EncryptString(txtContra.Text, initVector);
-				usuario = txtUser.Text;
-                cargo = txtTipo.Text;
-				datos1.valorGlobal = usuario; 
+                string password, user;
+                string position;
+				password = EncryptString(txtContra.Text, initVector);
+				user = txtUser.Text;
+                position = txtTipo.Text;
+				Data1.valorGlobal = user; 
 
 
 				MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1; database=proyecto; Uid=root; pwd=;");
-				var cmd = "SELECT Id_usuario from usuarios WHERE Nombre_Usuario='" + usuario + "'AND Cargo='" + cargo + "'AND Password='" + contra + "';";
+				var cmd = "SELECT Id_usuario from usuarios WHERE Username='" + user + "'AND Position='" + position + "'AND Password='" + password + "';";
 				MySqlCommand comando = new MySqlCommand(cmd, conexion);
                 conexion.Open();
 
-                if (cargo == "Administrador")
+                if (position == "Manager")
                 {
                     Session["usermane"] = txtUser;
                     Response.Redirect("Manager.aspx");
                 }
 
-                else if (cargo == "Empleado")
+                else if (position == "Employee")
                 {
                     Session["usermane"] = txtUser;
                     Response.Redirect("Employee.aspx");
                 }
 
-                else if (cargo == "Tecnico")
+                else if (position == "Technician")
                 {
                     Session["usermane"] = txtUser;
                     Response.Redirect("Technician.aspx");

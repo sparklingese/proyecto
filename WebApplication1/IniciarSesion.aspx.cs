@@ -17,7 +17,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
         protected void btnIniciar_Click1(object sender, EventArgs e)
         {
@@ -32,9 +32,10 @@ namespace WebApplication1
 
 
                 MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1; database=proyecto; Uid=root; pwd=;");
-                var cmd = "SELECT Id_usuario from usuarios WHERE Nombre_Usuario='" + usuario + "'AND Cargo='" + cargo + "'AND Password='" + contra + "';";
+                var cmd = "SELECT Id_usuario from usuarios WHERE Nombre_Usuario='" + usuario +  "'AND Password='" + contra + "'AND Cargo='" + cargo + "';";
                 MySqlCommand comando = new MySqlCommand(cmd, conexion);
                 conexion.Open();
+
 
                 if (cargo == "Administrador")
                 {
@@ -53,7 +54,6 @@ namespace WebApplication1
                     Session["usermane"] = txtUser;
                     Response.Redirect("Tecnico.aspx");
                 }
-
                 else
                 {
                     alerta.Text = "<script>Swal.fire('Error de Credenciales', 'Su usuario o contraseña no son correctos', 'error') </script>";

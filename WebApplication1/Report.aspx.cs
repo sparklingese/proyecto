@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 using System.Data;
 using WebApplication1.Clases;
+using WebApplication1.Clases_Ingles;
 
 namespace WebApplication1
 {
@@ -29,15 +30,15 @@ namespace WebApplication1
             {
                 try
                 {
-                    Agregar pReporte = new Agregar();
-                    pReporte.Maquina = txtmaquina.Text.Trim();
-                    pReporte.Descripcion = txtdescripcion.Text.Trim();
-                    pReporte.Problema = txtproblema.Text.Trim();
-                    pReporte.Escritor = txtescritor.Text.Trim();
-                    int resultado = conexiones.agregar(pReporte);
+                    Add pReport = new Add();
+                    pReport.Computer = txtmaquina.Text.Trim();
+                    pReport.Description = txtdescripcion.Text.Trim();
+                    pReport.Problem = txtproblema.Text.Trim();
+                    pReport.Writer = txtescritor.Text.Trim();
+                    int resultado = Conection.add(pReport);
                     conec.Open();
                     MySqlCommand cmd = conec.CreateCommand();
-                    cmd.CommandText = "select * from reporte";
+                    cmd.CommandText = "select * from report";
                     cmd.ExecuteNonQuery();
                     DataTable dt = new DataTable();
                     MySqlDataAdapter da = new MySqlDataAdapter(cmd);

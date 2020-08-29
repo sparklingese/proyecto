@@ -8,6 +8,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.IO;
 using WebApplication1.Clases;
+using WebApplication1.Clases_Ingles;
 
 namespace WebApplication1
 {
@@ -33,17 +34,17 @@ namespace WebApplication1
             {
                 if (txtContra.Text == txtConfirm.Text)
                 {
-                    string nombre;
-                    string usuario;
+                    string name;
+                    string user;
                     string encriptada;
-                    string genero;
-                    string cargo;
-                    nombre = txtName.Text;
-                    usuario = txtUser.Text;
+                    string gender;
+                    string position;
+                    name = txtName.Text;
+                    user = txtUser.Text;
                     encriptada = EncryptString(txtContra.Text, initVector);
-                    genero = txtGenero.Text;
-                    cargo = txtCargo.Text;
-                    if (conexiones.UsuariosRepetidos(usuario, encriptada, nombre, genero, cargo) == 0)
+                    gender = txtGenero.Text;
+                    position = txtCargo.Text;
+                    if (Conection.RepeatUsers(user, encriptada, name, gender, position) == 0)
                     {
                         alerta.Text = "<script>Swal.fire('Successfully registered', 'You've registered satisfactorily!', 'success'); </script>";
                         txtName.Text = "";
