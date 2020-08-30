@@ -47,5 +47,83 @@ namespace WebApplication1
         {
             Response.Redirect("Administrador.aspx");
         }
+
+        protected void Unnamed2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                conec.Open();
+                MySqlCommand cmd = conec.CreateCommand();
+                cmd.CommandText = "select * from reporte WHERE Estado='Resuelto'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                gdvrepo.DataSource = dt;
+                gdvrepo.DataBind();
+                conec.Close();
+
+                alerta.Text = "<script>Swal.fire('Los datos se han cargado con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
+
+            }
+            catch
+            {
+                alerta.Text = "<script>Swal.fire('Algo salio mal', 'Intentalo otra vez', 'error') </script>";
+            }
+        }
+
+        protected void Unnamed3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                conec.Open();
+                MySqlCommand cmd = conec.CreateCommand();
+                cmd.CommandText = "select * from reporte WHERE Estado='Disponible'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                gdvrepo.DataSource = dt;
+                gdvrepo.DataBind();
+                conec.Close();
+
+                alerta.Text = "<script>Swal.fire('Los datos se han cargado con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
+
+            }
+            catch
+            {
+                alerta.Text = "<script>Swal.fire('Algo salio mal', 'Intentalo otra vez', 'error') </script>";
+            }
+        }
+
+        protected void Unnamed4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                conec.Open();
+                MySqlCommand cmd = conec.CreateCommand();
+                cmd.CommandText = "select * from reporte Where Estado='Incompleto'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                gdvrepo.DataSource = dt;
+                gdvrepo.DataBind();
+                conec.Close();
+
+                alerta.Text = "<script>Swal.fire('Los datos se han cargado con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
+
+            }
+            catch
+            {
+                alerta.Text = "<script>Swal.fire('Algo salio mal', 'Intentalo otra vez', 'error') </script>";
+            }
+        }
     }
 }

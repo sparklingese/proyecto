@@ -38,7 +38,7 @@ namespace WebApplication1.Clases_Ingles
         public static int add(Add pReport)
         {
             int retorno = 0;
-            MySqlCommand comado = new MySqlCommand(string.Format("Insert into report (Id,Computer_No,Description,Problem_type,User) values ('{0}','{1}','{2}','{3}','{4}')", pReport.Id, pReport.Computer, pReport.Description, pReport.Problem, pReport.Writer), Data.ObtenerConexion());
+            MySqlCommand comado = new MySqlCommand(string.Format("Insert into report (Id,Computer_No,Description,Problem_type,User,Status) values ('{0}','{1}','{2}','{3}','{4}', 'Available')", pReport.Id, pReport.Computer, pReport.Description, pReport.Problem, pReport.Writer), Data.ObtenerConexion());
             retorno = comado.ExecuteNonQuery();
             return retorno;
         }

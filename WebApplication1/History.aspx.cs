@@ -26,7 +26,7 @@ namespace WebApplication1
 
                 conec.Open();
                 MySqlCommand cmd = conec.CreateCommand();
-                cmd.CommandText = "select * from report";
+                cmd.CommandText = "SELECT * FROM report";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -46,6 +46,84 @@ namespace WebApplication1
         protected void btnInicio_Click(object sender, EventArgs e)
         {
             Response.Redirect("Manager.aspx");
+        }
+
+        protected void Unnamed2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                conec.Open();
+                MySqlCommand cmd = conec.CreateCommand();
+                cmd.CommandText = "SELECT * FROM report WHERE Status='Solved'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                gdvrepo.DataSource = dt;
+                gdvrepo.DataBind();
+                conec.Close();
+
+                alerta.Text = "<script>Swal.fire('The data has been loaded successfully.', 'Thank you for preferring us!', 'success'); </script>";
+
+            }
+            catch
+            {
+                alerta.Text = "<script>Swal.fire('Something went wrong', 'Try again', 'error') </script>";
+            }
+        }
+
+        protected void Unnamed3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                conec.Open();
+                MySqlCommand cmd = conec.CreateCommand();
+                cmd.CommandText = "SELECT * FROM report WHERE Status='Available'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                gdvrepo.DataSource = dt;
+                gdvrepo.DataBind();
+                conec.Close();
+
+                alerta.Text = "<script>Swal.fire('The data has been loaded successfully.', 'Thank you for preferring us!', 'success'); </script>";
+
+            }
+            catch
+            {
+                alerta.Text = "<script>Swal.fire('Something went wrong', 'Try again', 'error') </script>";
+            }
+        }
+
+        protected void Unnamed4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                conec.Open();
+                MySqlCommand cmd = conec.CreateCommand();
+                cmd.CommandText = "SELECT * FROM report WHERE Status='Unsolved'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                gdvrepo.DataSource = dt;
+                gdvrepo.DataBind();
+                conec.Close();
+
+                alerta.Text = "<script>Swal.fire('The data has been loaded successfully.', 'Thank you for preferring us!', 'success'); </script>";
+
+            }
+            catch
+            {
+                alerta.Text = "<script>Swal.fire('Something went wrong', 'Try again', 'error') </script>";
+            }
         }
     }
 }

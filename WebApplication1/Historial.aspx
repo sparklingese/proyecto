@@ -43,8 +43,11 @@
                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
         </div>
-         <div>
+        <div>
             <asp:Button ID="Button1" runat="server" CssClass="btn btn-dark" Text="Ver Historial" OnClick="Unnamed1_Click" />
+            <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Ver Resueltos" OnClick="Unnamed2_Click" />
+            <asp:Button ID="Button3" runat="server" CssClass="btn btn-dark" Text="Ver Disponibles" OnClick="Unnamed3_Click" />
+            <asp:Button ID="Button4" runat="server" CssClass="btn btn-dark" Text="Ver Incompletos" OnClick="Unnamed4_Click" />
         </div>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
         <script src="js/bootstrap.min.js"></script>

@@ -76,7 +76,6 @@
     <Content Include="Create.aspx" />
     <Content Include="Empleado.aspx" />
     <Content Include="Employee.aspx" />
-    <Content Include="Global.asax" />
     <Content Include="Historial.aspx" />
     <Content Include="History.aspx" />
     <Content Include="Home.aspx" />
@@ -162,9 +161,6 @@
     </Compile>
     <Compile Include="Employee.aspx.designer.cs">
       <DependentUpon>Employee.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Historial.aspx.cs">
       <DependentUpon>Historial.aspx</DependentUpon>

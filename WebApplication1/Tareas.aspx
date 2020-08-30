@@ -44,7 +44,11 @@
             </asp:GridView>
         </div>
          <div>
-            <asp:Button ID="Button1" runat="server" CssClass="btn btn-dark" Text="Ver reportes" OnClick="Unnamed1_Click" />
+            <asp:Button ID="Button1" runat="server" CssClass="btn btn-dark" Text="Ver reportes disponibles" OnClick="Unnamed1_Click" />
+              <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Marcar como Resuelto" OnClick="Unnamed2_Click" />
+              <asp:Button ID="Button3" runat="server" CssClass="btn btn-dark" Text="Marcar como incompleto" OnClick="Unnamed3_Click" />
+              <asp:Button ID="Button4" runat="server" CssClass="btn btn-dark" Text="Ver Historial" OnClick="Unnamed4_Click" />
+              <asp:Button ID="Button5" runat="server" CssClass="btn btn-dark" Text="Seleccionar Reporte" OnClick="Unnamed5_Click" />
         </div>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
         <script src="js/bootstrap.min.js"></script>
