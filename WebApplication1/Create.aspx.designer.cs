@@ -121,13 +121,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label lblGenero;
         
         /// <summary>
-        /// Control txtGenero.
+        /// Control dxtGenero.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGenero;
+        protected global::System.Web.UI.WebControls.DropDownList dxtGenero;
         
         /// <summary>
         /// Control lblCargo.
@@ -139,13 +139,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label lblCargo;
         
         /// <summary>
-        /// Control txtCargo.
+        /// Control dxtCargo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCargo;
+        protected global::System.Web.UI.WebControls.DropDownList dxtCargo;
         
         /// <summary>
         /// Control btnIngresar.
@@ -157,12 +157,12 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Button btnIngresar;
         
         /// <summary>
-        /// Control alerta.
+        /// Control alert.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal alerta;
+        protected global::System.Web.UI.WebControls.Literal alert;
     }
 }

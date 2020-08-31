@@ -30,7 +30,7 @@ namespace WebApplication1
 
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text.Trim() != "" && txtContra.Text.Trim() != "" && txtConfirm.Text.Trim() != "" && txtName.Text.Trim() != "" && txtGenero.Text.Trim() != "" && txtCargo.Text.Trim() != "")
+            if (txtUser.Text.Trim() != "" && txtContra.Text.Trim() != "" && txtConfirm.Text.Trim() != "" && txtName.Text.Trim() != "" && dxtGenero.Text.Trim() != "" && dxtCargo.Text.Trim() != "")
             {
                 if (txtContra.Text == txtConfirm.Text)
                 {
@@ -42,31 +42,31 @@ namespace WebApplication1
                     name = txtName.Text;
                     user = txtUser.Text;
                     encriptada = EncryptString(txtContra.Text, initVector);
-                    gender = txtGenero.Text;
-                    position = txtCargo.Text;
+                    gender = dxtGenero.Text;
+                    position = dxtCargo.Text;
                     if (Conection.RepeatUsers(user, encriptada, name, gender, position) == 0)
                     {
-                        alerta.Text = "<script>Swal.fire('Successfully registered', 'You've registered satisfactorily!', 'success'); </script>";
+                        alert.Text = "<script>Swal.fire('Successfully registered', 'You've registered satisfactorily!', 'success');</script>";
                         txtName.Text = "";
                         txtUser.Text = "";
                         txtContra.Text = "";
                         txtConfirm.Text = "";
-                        txtGenero.Text = "";
-                        txtCargo.Text = "";
+                        dxtGenero.Text = "";
+                        dxtCargo.Text = "";
                     }
                     else
                     {
-                        alerta.Text = "<script>Swal.fire('This user already exists', 'Choose new user name', 'error'); </script>";
+                        alert.Text = "<script>Swal.fire('This user already exists', 'Choose new user name', 'error');</script>";
                     }
                 }
                 else
                 {
-                    alerta.Text = "<script>Swal.fire('Wrong password', 'Repeat your password.', 'error');</script>";
+                    alert.Text = "<script>Swal.fire('Wrong password', 'Repeat your password.', 'error');</script>";
                 }
             }
             else
             {
-                alerta.Text = "<script>Swal.fire('WARNING', 'Do not leave blank', 'error') </script>";
+                alert.Text = "<script>Swal.fire('WARNING', 'Do not leave blank', 'error') </script>";
             }
         }
         private const string initVector = "pemgail9uzpgzl88";

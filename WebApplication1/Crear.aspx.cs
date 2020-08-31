@@ -29,7 +29,7 @@ namespace WebApplication1
 
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text.Trim() != "" && txtContra.Text.Trim() != "" && txtConfirm.Text.Trim() != "" && txtName.Text.Trim() != "" && txtGenero.Text.Trim() != "" && txtCargo.Text.Trim() != "")
+            if (txtUser.Text.Trim() != "" && txtContra.Text.Trim() != "" && txtConfirm.Text.Trim() != "" && txtName.Text.Trim() != "" && dxtGenero.Text.Trim() != "" && dxtCargo.Text.Trim() != "")
             {
                 if (txtContra.Text == txtConfirm.Text)
                 {
@@ -41,8 +41,8 @@ namespace WebApplication1
                     nombre = txtName.Text;
                     usuario = txtUser.Text;
                     encriptada = EncryptString(txtContra.Text, initVector);
-                    genero = txtGenero.Text;
-                    cargo = txtCargo.Text;
+                    genero = dxtGenero.Text;
+                    cargo = dxtCargo.Text;
                     if (conexiones.UsuariosRepetidos(usuario, encriptada, nombre, genero, cargo) == 0)
                     {
                         alerta.Text = "<script>Swal.fire('Registrado con éxito', '¡Se ha registrado satisfacoriamente!', 'success'); </script>";
@@ -50,8 +50,8 @@ namespace WebApplication1
                         txtUser.Text = "";
                         txtContra.Text = "";
                         txtConfirm.Text = "";
-                        txtGenero.Text = "";
-                        txtCargo.Text = "";
+                        dxtGenero.Text = "";
+                        dxtCargo.Text = "";
                     }
                     else
                     {

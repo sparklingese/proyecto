@@ -11,10 +11,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Usuario"] != null)
-            {
-                Response.Redirect("IniciarSesion.aspx");
-            }
+            
         }
         protected void btninicio_Click(object sender, EventArgs e)
         {
@@ -23,7 +20,9 @@ namespace WebApplication1
 
         protected void btncerrar_Click(object sender, EventArgs e)
         {
-            Session.Remove("username");
+            Session.Remove("usuario");
+            Session.Remove("contraseña");
+            Session.Remove("cargo");
             Response.Redirect("Inicio.aspx");
         }
 

@@ -8,6 +8,7 @@ namespace WebApplication1.Clases_Ingles
 {
     public class Conection
     {
+
         public static int RepeatUsers(string user, string password, string name, string gender, string position)
         {
             int valor = 0;

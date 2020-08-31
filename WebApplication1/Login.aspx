@@ -36,7 +36,12 @@
             <div class="form-group">
 				<asp:Label ID="lblTipo" runat="server" meta:resourcekey="lblTipo" Text="Confirm your user level" CssClass="custom-control-label col-sm2"></asp:Label>
 				<div class="col-sm10">
-					<asp:TextBox ID="txtTipo" runat="server" CssClass="form-control"></asp:TextBox>
+					<asp:DropDownList ID="dxtTipo" runat="server" CssClass="form-control">
+                        <asp:ListItem>Confirm your position........</asp:ListItem>
+                         <asp:ListItem>Manager</asp:ListItem>
+                        <asp:ListItem>Employee</asp:ListItem>
+                        <asp:ListItem>Technician</asp:ListItem>
+                    </asp:DropDownList>
 				</div>
 			</div>
 

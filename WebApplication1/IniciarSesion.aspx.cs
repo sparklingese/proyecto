@@ -21,13 +21,13 @@ namespace WebApplication1
         }
         protected void btnIniciar_Click1(object sender, EventArgs e)
         {
-            if (txtContra.Text != "" && txtUser.Text != "" && txtTipo.Text != "")
+            if (txtContra.Text != "" && txtUser.Text != "" && dxtTipo.Text != "")
             {
                 string contra, usuario;
                 string cargo;
                 contra = EncryptString(txtContra.Text, initVector);
                 usuario = txtUser.Text;
-                cargo = txtTipo.Text;
+                cargo = dxtTipo.Text;
                 datos1.valorGlobal = usuario;
 
 
@@ -39,13 +39,17 @@ namespace WebApplication1
 
                 if (cargo == "Administrador")
                 {
-                    Session["usermane"] = txtUser;
+                    Session["usuario"] = txtUser.Text;
+                    Session["contraseña"] = txtContra.Text;
+                    Session["cargo"] = dxtTipo.Text;
                     Response.Redirect("Administrador.aspx");
                 }
 
                 else if (cargo == "Empleado")
                 {
-                    Session["usermane"] = txtUser;
+                    Session["usuario"] = txtUser.Text;
+                    Session["contraseña"] = txtContra.Text;
+                    Session["cargo"] = dxtTipo.Text;
                     Response.Redirect("Empleado.aspx");
                 }
 

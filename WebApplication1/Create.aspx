@@ -64,21 +64,29 @@
             <div class="form-group">
                 <asp:Label ID="lblGenero" runat="server" Text="Gender" CssClass="custom-control-label col-sm2"></asp:Label>
                 <div class="col-sm10">
-                    <asp:TextBox ID="txtGenero" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:DropDownList ID="dxtGenero" runat="server" CssClass="form-control">
+                        <asp:ListItem>Select your gender........</asp:ListItem>
+                        <asp:ListItem>Male</asp:ListItem>
+                        <asp:ListItem>Female</asp:ListItem>
+                    </asp:DropDownList>
                 </div>
             </div>
 
             <div class="form-group">
                 <asp:Label ID="lblCargo" runat="server" Text="Charge" CssClass="custom-control-label col-sm2"></asp:Label>
                 <div class="col-sm10">
-                    <asp:TextBox ID="txtCargo" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:DropDownList ID="dxtCargo" runat="server" CssClass="form-control">
+                        <asp:ListItem>Select your position........</asp:ListItem>
+                        <asp:ListItem>Employee</asp:ListItem>
+                        <asp:ListItem>Technician</asp:ListItem>
+                    </asp:DropDownList>
                 </div>
             </div>
 
             <div class="form-group">
                 <asp:Button ID="btnIngresar" runat="server" Text="Create User" CssClass="form-control btn btn btn-dark" OnClick="Unnamed1_Click" />
                 <br />
-                <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
+                <asp:Literal ID="alert" runat="server" Text=""></asp:Literal>
             </div>
 
 

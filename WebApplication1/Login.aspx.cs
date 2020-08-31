@@ -22,13 +22,13 @@ namespace WebApplication1
 
 		protected void btnIniciar_Click1(object sender, EventArgs e)
 		{
-			if (txtContra.Text != "" && txtUser.Text != "" && txtTipo.Text != "")
+			if (txtContra.Text != "" && txtUser.Text != "" && dxtTipo.Text != "")
 			{
                 string password, user;
                 string position;
 				password = EncryptString(txtContra.Text, initVector);
 				user = txtUser.Text;
-                position = txtTipo.Text;
+                position = dxtTipo.Text;
 				Data1.valorGlobal = user; 
 
 

@@ -65,14 +65,22 @@
 			<div class="form-group">
 				<asp:Label ID="lblGenero" runat="server" Text="Genero" CssClass="custom-control-label col-sm2"></asp:Label>
 				<div class="col-sm10">
-					<asp:TextBox ID="txtGenero" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:DropDownList ID="dxtGenero" runat="server" CssClass="form-control">
+                        <asp:ListItem>Seleccione el genero.....</asp:ListItem>
+                        <asp:ListItem>Masculino</asp:ListItem>
+                        <asp:ListItem>Femenino</asp:ListItem>
+                    </asp:DropDownList>
 				</div>
 			</div>
 
 			<div class="form-group">
 				<asp:Label ID="lblCargo" runat="server" Text="Cargo" CssClass="custom-control-label col-sm2"></asp:Label>
 				<div class="col-sm10">
-					<asp:TextBox ID="txtCargo" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:DropDownList ID="dxtCargo" runat="server" CssClass="form-control">
+                        <asp:ListItem>Seleccione el cargo........</asp:ListItem>
+                        <asp:ListItem>Empleado</asp:ListItem>
+                        <asp:ListItem>Tecnico</asp:ListItem>
+                    </asp:DropDownList>
 				</div>
 			</div>
 

@@ -26,7 +26,7 @@ namespace WebApplication1
 
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
-            if (txtproblema.Text.Trim() != "" && txtdescripcion.Text.Trim() != "" && txtmaquina.Text.Trim() != "" && txtescritor.Text.Trim() != "")
+            if (dxtproblema.Text.Trim() != "" && txtdescripcion.Text.Trim() != "" && txtmaquina.Text.Trim() != "" && txtescritor.Text.Trim() != "")
             {
                 try
                 {
@@ -34,7 +34,7 @@ namespace WebApplication1
                     Agregar pReporte = new Agregar();
                     pReporte.Maquina = txtmaquina.Text.Trim();
                     pReporte.Descripcion = txtdescripcion.Text.Trim();
-                    pReporte.Problema = txtproblema.Text.Trim();
+                    pReporte.Problema = dxtproblema.Text.Trim();
                     pReporte.Escritor = txtescritor.Text.Trim();
                     int resultado = conexiones.agregar(pReporte);
                     conec.Open();
@@ -48,7 +48,7 @@ namespace WebApplication1
 
                     alerta.Text = "<script>Swal.fire('Su Reporte se Envio con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
                     txtmaquina.Text = "";
-                    txtproblema.Text = "";
+                    dxtproblema.Text = "";
                     txtescritor.Text = "";
                     txtdescripcion.Text = "";
 

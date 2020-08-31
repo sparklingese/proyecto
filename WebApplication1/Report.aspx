@@ -86,7 +86,12 @@
                                 <asp:TextBox ID="txtdescripcion" runat="server" placeholder="Problem Description..." type="text" class="form-control" onpaste="return false" onkeypress="return validar(event)" minlength="1" MaxLength="300"></asp:TextBox>
                             </div>
                             <div class="form-group">
-                                <asp:TextBox ID="txtproblema" runat="server" placeholder="Type of Problem..." type="text" class="form-control" onpaste="return false" onkeypress="return validar(event)" minlength="1" MaxLength="25"></asp:TextBox>
+                                <asp:DropDownList ID="dxtproblema" runat="server" CssClass="form-control">
+                                    <asp:ListItem>Select your problem.....</asp:ListItem>
+                                    <asp:ListItem>Software</asp:ListItem>
+                                    <asp:ListItem>Hardware</asp:ListItem>
+                                    <asp:ListItem>Unknown</asp:ListItem>
+                                </asp:DropDownList>
                             </div>
                             <div class="form-group">
                                 <asp:TextBox ID="txtescritor" runat="server" placeholder="Username or Charge..." type="text" class="form-control" minlength="1" MaxLength="50"></asp:TextBox>
