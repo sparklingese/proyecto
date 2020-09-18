@@ -79,8 +79,6 @@
     <Content Include="Historial.aspx" />
     <Content Include="History.aspx" />
     <Content Include="Home.aspx" />
-    <Content Include="Imagenes\Bienvenido Nuevo Usuario %281%29.jpg" />
-    <Content Include="Imagenes\Diseño sin título.jpg" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="js\bootstrap.bundle.js" />
@@ -303,7 +301,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

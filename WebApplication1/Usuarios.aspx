@@ -17,8 +17,8 @@
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
                 <a class="navbar-brand" href="#">Techport</a>
-                <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btninicio_Click" />
-                <asp:Button ID="btncrear" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Crear Usuario" OnClick="btncrear_Click" />
+                <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btninicio_Click" />
+                <asp:Button ID="btncrear" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Crear Usuario" OnClick="btncrear_Click" />
                 
                 
 
@@ -26,7 +26,7 @@
         </header>
         <div class="jumbotron bg-info rounded-circle">
             <div class="container well contenedor bg-info text-white">
-                <h1 class="bg-dark">¡Bienvenido Administrador a Usuarios!</h1>
+                <h1>¡Bienvenido Administrador a Usuarios!</h1>
                 <p>En esta sección usted tiene el control ya que aca usted puede crear un nuevo usuario, editar un usuario que ya ha sido creado o inclusive eliminarlo</p>
               
             </div>

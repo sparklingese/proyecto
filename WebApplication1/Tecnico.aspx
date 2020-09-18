@@ -18,18 +18,18 @@
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
                 <a class="navbar-brand" href="#">Techport</a>
-                <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btninicio_Click" />
-                <asp:Button ID="btntareas" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Ver Tareas" OnClick="btntareas_Click" />
+                <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btninicio_Click" />
+                <asp:Button ID="btntareas" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Ver Tareas" OnClick="btntareas_Click" />
                 <asp:Button ID="btncerrar" BorderColor="White" ForeColor="White" class="btn btn-outline-warning my-2 my-sm-0" type="submit" runat="server" Text="Cerrar sesion" OnClick="btncerrar_Click" />
             </nav>
         </header>
 
         <div class="jumbotron bg-info rounded-circle">
             <div class="container well contenedor bg-info text-white">
-                <h1 class="bg-dark">¡Bienvenido Tecnico!</h1>
+                <h1>¡Bienvenido Tecnico!</h1>
                 <p>¿Que beneficios posees como tecnico? Como tecnico puedes observar las tareas o los reportes que tienes pendientes, ademas que puedes observar los reportes que ya has completado</p>
                 <p>
-                    <asp:Button ID="btnrepo" runat="server" Text="Revisa tus Reportes" CssClass="form-control btn btn-dark" OnClick="btnrepo_Click1" />
+                    <asp:Button ID="btnrepo" runat="server" Text="Revisa tus Reportes" CssClass="form-control btn btn-dark btn-outline-light text-info" OnClick="btnrepo_Click1" />
                 </p>
             </div>
         </div>

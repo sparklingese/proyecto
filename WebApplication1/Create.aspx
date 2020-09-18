@@ -20,8 +20,8 @@
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
                 <a class="navbar-brand" href="#">Techport</a>
-                <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Home" OnClick="btninicio_Click" />
-                <asp:Button ID="btncrear" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Create User" OnClick="btncrear_Click" />
+                <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Home" OnClick="btninicio_Click" />
+                <asp:Button ID="btncrear" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Create User" OnClick="btncrear_Click" />
                 
 
             </nav>

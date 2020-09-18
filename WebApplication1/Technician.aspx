@@ -17,18 +17,18 @@
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
                 <a class="navbar-brand" href="#">Techport</a>
-                <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Home" OnClick="btninicio_Click" />
-                <asp:Button ID="btntareas" BorderColor="White" ForeColor="White" class="btn btn-outline-success my-2 my-sm-0" type="submit" runat="server" Text="Task" OnClick="btntareas_Click" />
+                <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Home" OnClick="btninicio_Click" />
+                <asp:Button ID="btntareas" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Task" OnClick="btntareas_Click" />
                 <asp:Button ID="btncerrar" BorderColor="White" ForeColor="White" class="btn btn-outline-warning my-2 my-sm-0" type="submit" runat="server" Text="Log Out" OnClick="btncerrar_Click" />
             </nav>
         </header>
 
         <div class="jumbotron bg-info rounded-circle">
             <div class="container well contenedor bg-info text-white">
-                <h1 class="bg-dark">Welcome Technician!</h1>
+                <h1>Welcome Technician!</h1>
                 <p>What benefits do you have as a technician? As a technician you can see the tasks or reports that you have pending, in addition you can see the reports that you have already completed</p>
                 <p>
-                    <asp:Button ID="btnrepo" runat="server" Text="Check your Tasks" CssClass="form-control btn btn-dark" OnClick="btnrepo_Click1" />
+                    <asp:Button ID="btnrepo" runat="server" Text="Check your Tasks" CssClass="form-control btn btn-dark btn-outline-light text-info" OnClick="btnrepo_Click1" />
                 </p>
             </div>
         </div>
