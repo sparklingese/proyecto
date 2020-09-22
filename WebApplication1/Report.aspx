@@ -15,7 +15,7 @@
     <title>Send Report</title>
 </head>
 <body class="bg-info">
-     <script type="text/javascript">
+    <script type="text/javascript">
         function validar(e) { // 1
             tecla = (document.all) ? e.keyCode : e.which; // 2
             if (tecla == 8) return true; // 3
@@ -59,7 +59,9 @@
     <form id="form2" runat="server">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-            <a class="navbar-brand" href="#">Techport</a>
+            <a class="navbar-brand" href="#">
+                <img src="Imagenes/Logo_Proyecto.jpg" alt="Logo" style="width: 75px;" />
+            </a>
 
             <asp:Button ID="btnInicio" BorderColor="White" ForeColor="white" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Home" OnClick="btnInicio_Click" />
 

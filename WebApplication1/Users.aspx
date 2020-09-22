@@ -16,11 +16,13 @@
         <header>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-                <a class="navbar-brand" href="#">Techport</a>
+                <a class="navbar-brand" href="#">
+                    <img src="Imagenes/Logo_Proyecto.jpg" alt="Logo" style="width: 75px;" />
+                </a>
                 <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Home" OnClick="btninicio_Click" />
                 <asp:Button ID="btncrear" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Create User" OnClick="btncrear_Click" />
-                
-              
+
+
 
 
 
@@ -30,7 +32,7 @@
             <div class="container well contenedor bg-info text-white">
                 <h1>Welcome Manager to Users!</h1>
                 <p>In this section you have control as here you can create a new user, edit a user that has already been created or even delete it</p>
-               
+
             </div>
         </div>
         <footer class="bg-dark text-white">©2020 Techport: Is a website designed to report damages in computers.</footer>

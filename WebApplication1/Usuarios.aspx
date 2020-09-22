@@ -12,15 +12,17 @@
     <title>Usuarios</title>
 </head>
 <body class="bg-info">
-      <form runat="server">
+    <form runat="server">
         <header>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-                <a class="navbar-brand" href="#">Techport</a>
+                <a class="navbar-brand" href="#">
+                    <img src="Imagenes/Logo_Proyecto.jpg" alt="Logo" style="width: 75px;" />
+                </a>
                 <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btninicio_Click" />
                 <asp:Button ID="btncrear" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Crear Usuario" OnClick="btncrear_Click" />
-                
-                
+
+
 
             </nav>
         </header>
@@ -28,7 +30,7 @@
             <div class="container well contenedor bg-info text-white">
                 <h1>¡Bienvenido Administrador a Usuarios!</h1>
                 <p>En esta sección usted tiene el control ya que aca usted puede crear un nuevo usuario, editar un usuario que ya ha sido creado o inclusive eliminarlo</p>
-              
+
             </div>
         </div>
         <footer class="bg-dark text-white">©2020 Techport: es una pagina web para empresas.</footer>

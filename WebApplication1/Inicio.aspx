@@ -17,7 +17,9 @@
     <form id="form1" runat="server">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-            <a class="navbar-brand" href="#">Techport</a>
+            <a class="navbar-brand" href="#">
+                <img src="Imagenes/Logo_Proyecto.jpg" alt="Logo" style="width:75px;"/>
+            </a>
 
             <asp:Button ID="btnInicio" BorderColor="White" ForeColor="white" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btnInicio_Click" />
             <asp:Button ID="btnSesion" BorderColor="White" ForeColor="white" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Iniciar Sesión" OnClick="btnISesion_Click" />
@@ -28,7 +30,9 @@
         </nav>
         <div class="jumbotron bg-info rounded-circle">
             <div class="container well contenedor bg-info text-white">
+               <img src="Imagenes/Logo_Proyecto.jpg" width="100" />
                 <h1 >¡Bienvenido A Techport!</h1>
+                
                 <p>Se preguntara ¿Que es techport? Techport es una pagina web diseñada para reportar daños o problemas que un computador pueda poseer, ademas se tienen 3 tipos de usuario los cuales son: Administrador, Empleado y Tecnico. Esta pagina web ayuda a reportar mas eficientemente el daño que un computador pueda poseer directamente al tecnico</p>
                 <p>
                     <asp:Button ID="btnregi" runat="server" Text="Inicia Sesión Ahora" CssClass="form-control btn btn-dark" OnClick="btnregi_Click1" />

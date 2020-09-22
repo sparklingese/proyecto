@@ -16,21 +16,23 @@
     <title>Tareas</title>
 </head>
 <body class="bg-info">
-    
+
     <form runat="server">
 
 
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
 
-            <a class="navbar-brand" href="#">Techport</a>
+            <a class="navbar-brand" href="#">
+                <img src="Imagenes/Logo_Proyecto.jpg" alt="Logo" style="width: 75px;" />
+            </a>
 
             <asp:Button ID="btnInicio" BorderColor="White" ForeColor="White" class="btn btn-dark btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btnInicio_Click" />
 
         </nav>
-       
+
         <div class="container">
             <asp:GridView ID="gdvrepo" runat="server" Width="1004px" Height="270px" ForeColor="#333333" GridLines="Both">
-                <AlternatingRowStyle BackColor="White" /> 
+                <AlternatingRowStyle BackColor="White" />
                 <EditRowStyle BackColor="Black" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                 <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -43,12 +45,12 @@
                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
         </div>
-         <div>
+        <div>
             <asp:Button ID="Button1" runat="server" CssClass="btn btn-dark" Text="Ver reportes disponibles" OnClick="Unnamed1_Click" />
-              <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Marcar como Resuelto" OnClick="Unnamed2_Click" />
-              <asp:Button ID="Button3" runat="server" CssClass="btn btn-dark" Text="Marcar como incompleto" OnClick="Unnamed3_Click" />
-              <asp:Button ID="Button4" runat="server" CssClass="btn btn-dark" Text="Ver Historial" OnClick="Unnamed4_Click" />
-              <asp:Button ID="Button5" runat="server" CssClass="btn btn-dark" Text="Seleccionar Reporte" OnClick="Unnamed5_Click" />
+            <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Marcar como Resuelto" OnClick="Unnamed2_Click" />
+            <asp:Button ID="Button3" runat="server" CssClass="btn btn-dark" Text="Marcar como incompleto" OnClick="Unnamed3_Click" />
+            <asp:Button ID="Button4" runat="server" CssClass="btn btn-dark" Text="Ver Historial" OnClick="Unnamed4_Click" />
+            <asp:Button ID="Button5" runat="server" CssClass="btn btn-dark" Text="Seleccionar Reporte" OnClick="Unnamed5_Click" />
         </div>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
         <script src="js/bootstrap.min.js"></script>

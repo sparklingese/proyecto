@@ -16,7 +16,9 @@
         <header>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-                <a class="navbar-brand" href="#">Techport</a>
+                <a class="navbar-brand" href="#">
+                    <img src="Imagenes/Logo_Proyecto.jpg" alt="Logo" style="width: 75px;" />
+                </a>
                 <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Home" OnClick="btninicio_Click" />
                 <asp:Button ID="btnreporte" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Submit a Report" OnClick="btnreporte_Click" />
                 <asp:Button ID="btnhistorial" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="History" OnClick="btnhistorial_Click" />
@@ -32,7 +34,8 @@
                 <h1>Welcome Manager!</h1>
                 <p>You may wonder what you can do as an administrator? As an administrator you can submit your own reports, as well as have access to view the history of all reports that have been made either by yourself or by your own employees</p>
                 <p>
-                    <asp:Button ID="btnrepo" runat="server" Text="Send a Report Now!" CssClass="form-control btn btn-dark btn-outline-light text-info" OnClick="btnrepo_Click1" /></p>
+                    <asp:Button ID="btnrepo" runat="server" Text="Send a Report Now!" CssClass="form-control btn btn-dark btn-outline-light text-info" OnClick="btnrepo_Click1" />
+                </p>
             </div>
         </div>
         <footer class="bg-dark text-white">©2020 Techport: Is a website designed to report damages in computers.</footer>

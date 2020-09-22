@@ -17,7 +17,9 @@
         <header>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-                <a class="navbar-brand" href="#">Techport</a>
+                <a class="navbar-brand" href="#">
+                    <img src="Imagenes/Logo_Proyecto.jpg" alt="Logo" style="width: 75px;" />
+                </a>
                 <asp:Button ID="btninicio" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btninicio_Click" />
                 <asp:Button ID="btntareas" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Ver Tareas" OnClick="btntareas_Click" />
                 <asp:Button ID="btncerrar" BorderColor="White" ForeColor="White" class="btn btn-outline-warning my-2 my-sm-0" type="submit" runat="server" Text="Cerrar sesion" OnClick="btncerrar_Click" />

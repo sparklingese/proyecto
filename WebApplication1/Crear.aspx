@@ -16,14 +16,17 @@
 </head>
 <body class="bg-info">
     <form id="form1" runat="server" class="form-horizontal"> 
-    <header>
+        <header>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-                <a class="navbar-brand" href="#">Techport</a>
+                <a class="navbar-brand" href="#">
+                    <img src="Imagenes/Logo_Proyecto.jpg" alt="Logo" style="width: 75px;" />
+                </a>
+
                 <asp:Button ID="Button1" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Inicio" OnClick="btninicio_Click" />
                 <asp:Button ID="btncrear" BorderColor="White" ForeColor="White" class="btn btn-outline-light text-info my-2 my-sm-0" type="submit" runat="server" Text="Crear Usuario" OnClick="btncrear_Click" />
-                
-                
+
+
 
             </nav>
         </header>
