@@ -125,5 +125,57 @@ namespace WebApplication1
                 alerta.Text = "<script>Swal.fire('Algo salio mal', 'Intentalo otra vez', 'error') </script>";
             }
         }
+
+        protected void Unnamed5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                conec.Open();
+                MySqlCommand cmd = conec.CreateCommand();
+                cmd.CommandText = "DELETE FROM reporte WHERE Estado='Resuelto'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                gdvrepo.DataSource = dt;
+                gdvrepo.DataBind();
+                conec.Close();
+
+                alerta.Text = "<script>Swal.fire('Los datos se han eliminado con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
+
+            }
+            catch
+            {
+                alerta.Text = "<script>Swal.fire('Algo salio mal', 'Intentalo otra vez', 'error') </script>";
+            }
+        }
+
+        protected void Unnamed6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                conec.Open();
+                MySqlCommand cmd = conec.CreateCommand();
+                cmd.CommandText = "DELETE FROM reporte WHERE Estado='Incompleto'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                gdvrepo.DataSource = dt;
+                gdvrepo.DataBind();
+                conec.Close();
+
+                alerta.Text = "<script>Swal.fire('Los datos se han eliminado con exito.', '¡Gracias por preferirnos!', 'success'); </script>";
+
+            }
+            catch
+            {
+                alerta.Text = "<script>Swal.fire('Algo salio mal', 'Intentalo otra vez', 'error') </script>";
+            }
+        }
     }
 }

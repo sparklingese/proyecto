@@ -125,5 +125,57 @@ namespace WebApplication1
                 alerta.Text = "<script>Swal.fire('Something went wrong', 'Try again', 'error') </script>";
             }
         }
+
+        protected void Unnamed5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                conec.Open();
+                MySqlCommand cmd = conec.CreateCommand();
+                cmd.CommandText = "DELETE FROM report WHERE Status='Solved'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                gdvrepo.DataSource = dt;
+                gdvrepo.DataBind();
+                conec.Close();
+
+                alerta.Text = "<script>Swal.fire('The data has been successfully deleted', 'Thank you for preferring us!', 'success'); </script>";
+
+            }
+            catch
+            {
+                alerta.Text = "<script>Swal.fire('Something went wrong', 'Try again', 'error') </script>";
+            }
+        }
+
+        protected void Unnamed6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                conec.Open();
+                MySqlCommand cmd = conec.CreateCommand();
+                cmd.CommandText = "DELETE FROM report WHERE Status='Unsolved'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+                gdvrepo.DataSource = dt;
+                gdvrepo.DataBind();
+                conec.Close();
+
+                alerta.Text = "<script>Swal.fire('The data has been successfully deleted', 'Thank you for preferring us!', 'success'); </script>";
+
+            }
+            catch
+            {
+                alerta.Text = "<script>Swal.fire('Something went wrong', 'Try again', 'error') </script>";
+            }
+        }
     }
 }

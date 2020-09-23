@@ -50,6 +50,8 @@
             <asp:Button ID="Button2" runat="server" CssClass="btn btn-dark" Text="Ver Resueltos" OnClick="Unnamed2_Click" />
             <asp:Button ID="Button3" runat="server" CssClass="btn btn-dark" Text="Ver Disponibles" OnClick="Unnamed3_Click" />
             <asp:Button ID="Button4" runat="server" CssClass="btn btn-dark" Text="Ver Incompletos" OnClick="Unnamed4_Click" />
+            <asp:Button ID="Button5" runat="server" CssClass="btn btn-dark" Text="Borrar Trabajos Resueltos" OnClick="Unnamed5_Click" />
+            <asp:Button ID="Button6" runat="server" CssClass="btn btn-dark" Text="Borrar Trabajos Incompletos" OnClick="Unnamed6_Click" />
         </div>
         <asp:Literal ID="alerta" runat="server" Text=""></asp:Literal>
         <script src="js/bootstrap.min.js"></script>
